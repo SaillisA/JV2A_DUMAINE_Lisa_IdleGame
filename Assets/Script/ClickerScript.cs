@@ -7,6 +7,7 @@ public class ClickerScript : MonoBehaviour
 {
 
     public GameObject clicker;
+    public ChangementLieux lieuClicker;
     
     //valeur de click
     public int clickerValeur = 1;
@@ -18,7 +19,10 @@ public class ClickerScript : MonoBehaviour
 
     //autoclick
     public bool autoClickActiver = false;
-    
+    public TextMeshProUGUI messageBoutonAutoClick;
+    public TextMeshProUGUI afficheAutoClickFrequence;
+    public int frequenceAutoClick = 5;
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +45,7 @@ public class ClickerScript : MonoBehaviour
             {
                 scoreCompteur += clickerValeur;
             }
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(frequenceAutoClick);
         }
         
     }
@@ -55,20 +59,41 @@ public class ClickerScript : MonoBehaviour
     public void AugmenterClickerValeur()
     {
         clickerValeur = clickerValeur * 2;
-        afficheClickerValeur.text = clickerValeur + " score/seconde";
+        afficheClickerValeur.text = clickerValeur + " pts/s";
     }
 
     public void ActiverDescativerAutoClicker()
     {
         if(autoClickActiver == true)
         {
+            messageBoutonAutoClick.text = "AutoClick : Desactiver";
             autoClickActiver = false;
         }
         else 
         {
+            messageBoutonAutoClick.text = "AutoClick : Activer";
             autoClickActiver = true; 
         }
 
+
+    }
+    public void AmeliorerFrequenceAutoClick()
+    {
+        if(frequenceAutoClick > 0)
+        {
+            frequenceAutoClick -= 1;
+            afficheAutoClickFrequence.text = "Toutes les " + frequenceAutoClick + " secondes";
+        }       
+        else
+        {
+            afficheAutoClickFrequence.text = "Toutes les " + frequenceAutoClick + " seconde. Vous etes au maximum"; 
+        }
+    }
+
+    public void AllerDansBoutique()
+    {
+        lieuClicker.dansClickers = false;
+        lieuClicker.dansBoutique = true;
 
     }
 }

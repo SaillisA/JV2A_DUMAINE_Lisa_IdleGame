@@ -59,7 +59,7 @@ public class ClickerScript : MonoBehaviour
     public void AugmenterClickerValeur()
     {
         clickerValeur = clickerValeur * 2;
-        afficheClickerValeur.text = clickerValeur + " pts/s";
+        afficheClickerValeur.text = clickerValeur + " ppp";
     }
 
     public void ActiverDescativerAutoClicker()

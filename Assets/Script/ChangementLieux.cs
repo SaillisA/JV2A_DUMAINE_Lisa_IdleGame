@@ -52,49 +52,49 @@ public class ChangementLieux : MonoBehaviour
     }
 
 
-    public void boutonBoutique()
+    public void BoutonBoutique()
     {
         //dans le canva clicker, quand on clique sur le bouton boutique
         dansBoutique = true; dansClickers = false;
         clickerCanva.gameObject.SetActive(false);
         boutiqueCanvas.gameObject.SetActive(true);
     }
-    public void boutonManagement()
+    public void BoutonManagement()
     {
         //dans le canva clicker, quand on clique sur le bouton management
         dansManagement = true; dansClickers = false;
         clickerCanva.gameObject.SetActive(false);
         managementCanvas.gameObject.SetActive(true);
     }
-    public void boutonClickerDepuisBoutique()
+    public void BoutonClickerDepuisBoutique()
     {
         //dans le canva boutique, quand on clique sur le bouton clicker
         dansBoutique = false; dansClickers = true;
         boutiqueCanvas.gameObject.SetActive(false) ;
         clickerCanva.gameObject.SetActive(true) ;
     }
-    public void boutonClickerDepuisManagement()
+    public void BoutonClickerDepuisManagement()
     {
         //dans le canva management, quand on clique sur le bouton clicker
         dansClickers = true; dansManagement = false;
         managementCanvas.gameObject.SetActive(false);
         clickerCanva.gameObject.SetActive(true ) ;
     }
-    public void boutonAnimalerie()
+    public void BoutonAnimalerie()
     {
         //dans le canva boutique, quand on clique sur l'animalerie
         dansBoutique = false; dansAnimalerie = true;
         boutiqueCanvas.gameObject.SetActive(false) ;
         animalerieCanvas.gameObject.SetActive(true) ;
     }
-    public void boutonPcCongig()
+    public void BoutonPcCongig()
     {
         //dans le canva boutique, quand on clique sur l'animalerie
         dansBoutique = false; dansPcConfig = true;
         boutiqueCanvas.gameObject.SetActive(false);
         pcConfigCanvas.gameObject.SetActive(true);
     }
-    public void revenirDansBoutique()
+    public void RevenirDansBoutique()
     {
         if (dansAnimalerie)
         {

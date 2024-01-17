@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52.100006, y: 84.4}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 52.799984, y: 60.368793}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3682068
 MonoBehaviour:
@@ -416,8 +416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327.59998, y: 82.60004}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 325.89996, y: 58.6}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &61080759
 MonoBehaviour:
@@ -1110,8 +1110,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -88.8, y: -85.4}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: -89.4, y: -109.6}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455639805
 MonoBehaviour:
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.756061, g: 0.8784314, b: 0.68235296, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1446,8 +1446,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327.6, y: -87.1}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 325.89993, y: -110.77082}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869996103
 MonoBehaviour:
@@ -2396,8 +2396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52.1, y: -85}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 52.8, y: -109.32447}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132284872
 MonoBehaviour:
@@ -2737,8 +2737,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52.100006, y: 250.90002}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 52.799984, y: 227.06892}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200864554
 MonoBehaviour:
@@ -3089,14 +3089,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 41872790}
-  prix: 0
+  prix: 10
   affichePrix: {fileID: 918370036}
   boutonAcheter: {fileID: 469614750}
   listeAnimaux:
   - {fileID: 11400000, guid: 2895dbdd6b361da4fb5f4214e5b6f802, type: 2}
   - {fileID: 11400000, guid: 92ce621c3719ef64a870c91ccf2791aa, type: 2}
   - {fileID: 11400000, guid: d177984eca713bc4a8abbb452c780796, type: 2}
+  listCompteurAnimale: 030000000300000003000000
   indiceAnimalListe: 0
+  listeBureaux:
+  - {fileID: 455639805}
+  - {fileID: 1132284872}
+  - {fileID: 1919021495}
+  - {fileID: 869996103}
+  - {fileID: 1541044040}
+  - {fileID: 3682068}
+  - {fileID: 1519952790}
+  - {fileID: 61080759}
+  - {fileID: 2092229028}
+  - {fileID: 1200864554}
+  - {fileID: 1387362969}
+  - {fileID: 1648604566}
   indiceBureauListe: 0
   clickerCanva: {fileID: 1903755583}
   tet: {fileID: 455639805}
@@ -3213,8 +3227,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.9, y: 249.60005}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 188.80002, y: 226.17361}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387362969
 MonoBehaviour:
@@ -3421,8 +3435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.9, y: 83.10004}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 188.8, y: 59.47349}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519952790
 MonoBehaviour:
@@ -3488,7 +3502,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541044038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3496,8 +3510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -88.79999, y: 84.3}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: -89.40005, y: 60.3}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541044040
 MonoBehaviour:
@@ -3639,8 +3653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327.59998, y: 249.10005}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 325.9, y: 225.82925}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648604566
 MonoBehaviour:
@@ -4269,8 +4283,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.9, y: -86.6}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 188.80002, y: -110.42646}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1919021495
 MonoBehaviour:
@@ -4797,8 +4811,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -88.79999, y: 250.8}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: -89.4, y: 227}
+  m_SizeDelta: {x: 103.3097, y: 103.3097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092229028
 MonoBehaviour:

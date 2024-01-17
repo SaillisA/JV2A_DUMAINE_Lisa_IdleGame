@@ -5,9 +5,6 @@ using TMPro;
 
 public class ClickerScript : MonoBehaviour
 {
-
-    public GameObject clicker;
-    public ChangementLieux lieuClicker;
     
     //valeur de click
     public int clickerValeur = 1;
@@ -88,12 +85,5 @@ public class ClickerScript : MonoBehaviour
         {
             afficheAutoClickFrequence.text = "Toutes les " + frequenceAutoClick + " seconde. Vous etes au maximum"; 
         }
-    }
-
-    public void AllerDansBoutique()
-    {
-        lieuClicker.dansClickers = false;
-        lieuClicker.dansBoutique = true;
-
     }
 }

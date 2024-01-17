@@ -8,4 +8,5 @@ public class DataAnimaux : ScriptableObject
     public string nom;
     public float indicateurAugment;
     public Sprite imageAnimal;
+    public int compteurAchat = 3;
 }

@@ -6,13 +6,12 @@ public class ChangementLieux : MonoBehaviour
 {
     public bool dansClickers = false;
     public bool dansBoutique = false;
-    public bool dansManagement = false;
     public bool dansAnimalerie = false;
     public bool dansPcConfig  = false;
 
     //public Canvas clikersCanvas;
 
-    public GameObject clickerCanva, boutiqueCanvas, managementCanvas, animalerieCanvas, pcConfigCanvas;
+    public GameObject clickerCanva, boutiqueCanvas, animalerieCanvas, pcConfigCanvas;
 
 
     // Start is called before the first frame update
@@ -23,7 +22,6 @@ public class ChangementLieux : MonoBehaviour
         clickerCanva.gameObject.SetActive(true);
         //autresCanva
         boutiqueCanvas.gameObject.SetActive(false);
-        managementCanvas.gameObject.SetActive(false);
         animalerieCanvas.gameObject.SetActive(false);
         pcConfigCanvas.gameObject.SetActive(false);
     }
@@ -31,23 +29,6 @@ public class ChangementLieux : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dansClickers)
-        {
-            Debug.Log("onedanclicker");
-        }
-        if (!dansClickers)
-        {
-            
-            Debug.Log("onepludanclicker");
-        }
-        if (dansBoutique) 
-        {
-            Debug.Log("onedanboutique");
-        }
-        if (!dansBoutique)
-        {
-            Debug.Log("onepludanboutique");
-        }
 
     }
 
@@ -59,26 +40,12 @@ public class ChangementLieux : MonoBehaviour
         clickerCanva.gameObject.SetActive(false);
         boutiqueCanvas.gameObject.SetActive(true);
     }
-    public void BoutonManagement()
-    {
-        //dans le canva clicker, quand on clique sur le bouton management
-        dansManagement = true; dansClickers = false;
-        clickerCanva.gameObject.SetActive(false);
-        managementCanvas.gameObject.SetActive(true);
-    }
     public void BoutonClickerDepuisBoutique()
     {
         //dans le canva boutique, quand on clique sur le bouton clicker
         dansBoutique = false; dansClickers = true;
         boutiqueCanvas.gameObject.SetActive(false) ;
         clickerCanva.gameObject.SetActive(true) ;
-    }
-    public void BoutonClickerDepuisManagement()
-    {
-        //dans le canva management, quand on clique sur le bouton clicker
-        dansClickers = true; dansManagement = false;
-        managementCanvas.gameObject.SetActive(false);
-        clickerCanva.gameObject.SetActive(true ) ;
     }
     public void BoutonAnimalerie()
     {

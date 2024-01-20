@@ -23,14 +23,22 @@ public class AnimalerieScript : MonoBehaviour
 
     public GameObject clickerCanva;
 
+    public Image imageAnimaleAchete;            //pour afficher le personnage que le jouer a recuperer
+    public TextMeshProUGUI texteAnimaleAchete;
+    public GameObject boutonAnimalAchete;      //pour desactiver le bouton
 
-    public Image tet;
-    public Sprite gigi;
+    public int fouetPrix = 1000;
+    public int nombreFouet = 5;
+    public TextMeshProUGUI prixFouet;
 
     // Start is called before the first frame update
     void Start()
     {
         affichePrix.text = prix + "$";
+        prixFouet.text = fouetPrix + "$";
+        boutonAnimalAchete.gameObject.SetActive(false);
+        imageAnimaleAchete.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -72,6 +80,16 @@ public class AnimalerieScript : MonoBehaviour
                     listeBureaux[indiceBureauListe].sprite = listeAnimaux[indiceAnimalListe].imageAnimal;
                     listeBureaux.RemoveAt(indiceBureauListe);
 
+                    //On l'affiche
+                    boutonAnimalAchete.gameObject.SetActive(true);
+                    imageAnimaleAchete.gameObject.SetActive(true);
+                    imageAnimaleAchete.sprite = listeAnimaux[indiceAnimalListe].imageAnimal;
+                    texteAnimaleAchete.text = "Bravo ! Vous avez eu " + listeAnimaux[indiceAnimalListe].nom;
+
+                    //On incremente le multiplicateur de l'autoclick
+                    score.multiplicateurAutoclick += listeAnimaux[indiceAnimalListe].indicateurAugment;
+                    Debug.Log("multiplicateur :"+score.multiplicateurAutoclick);
+
                     //prix
                     score.scoreCompteur -= prix;
                     prix *= 2;
@@ -86,5 +104,33 @@ public class AnimalerieScript : MonoBehaviour
             affichePrix.text = "Vous ne pouvez pas acheter plus d'animaux";
             Destroy(boutonAcheter);
         }
+    }
+
+    public void AchatFouet()
+    {
+        if(nombreFouet > 0)
+        {
+            if(score.scoreCompteur >= fouetPrix)
+            {
+                Debug.Log("fouet accheter");
+                score.scoreCompteur -= fouetPrix;
+                fouetPrix *= 10;
+                nombreFouet -= 1;
+                prixFouet.text = fouetPrix + "$";
+                score.AmeliorerFrequenceAutoClick();
+            }
+            
+        }
+        else
+        {
+            prixFouet.text = ("Vous ne pouvez pas en achetez plus, attention au PETA");
+        }
+    }
+
+
+    public void ValidationAnimalAchete()
+    {
+        boutonAnimalAchete.gameObject.SetActive(false);
+        imageAnimaleAchete.gameObject.SetActive(false);
     }
 }

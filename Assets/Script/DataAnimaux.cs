@@ -6,7 +6,7 @@ using UnityEngine;
 public class DataAnimaux : ScriptableObject
 {
     public string nom;
-    public float indicateurAugment;
+    public int indicateurAugment;
     public Sprite imageAnimal;
     public int compteurAchat = 3;
 }

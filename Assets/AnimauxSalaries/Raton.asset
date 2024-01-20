@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4996d302eae73714782c8476f49b08cd, type: 3}
-  m_Name: Girafe
+  m_Name: Raton
   m_EditorClassIdentifier: 
-  nom: Gigi
-  indicateurAugment: 10
-  imageAnimal: {fileID: 21300000, guid: 764341f4239d9814cad7e60eda0d8615, type: 3}
+  nom: Ratonton
+  indicateurAugment: 8
+  imageAnimal: {fileID: 21300000, guid: a64066d3edfc97f40a755c644b4892f6, type: 3}
   compteurAchat: 3

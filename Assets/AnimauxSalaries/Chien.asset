@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Chien
   m_EditorClassIdentifier: 
   nom: Toutou
-  indicateurAugment: 4
-  imageAnimal: {fileID: 21300000, guid: 07e717fd76473fb4c86fbef388b9d47b, type: 3}
+  indicateurAugment: 2
+  imageAnimal: {fileID: 21300000, guid: 8b538fb36ffbbd44d9a8d30f2f5474f7, type: 3}
   compteurAchat: 3

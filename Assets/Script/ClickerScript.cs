@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class ClickerScript : MonoBehaviour
 {
@@ -19,7 +20,10 @@ public class ClickerScript : MonoBehaviour
     public TextMeshProUGUI messageBoutonAutoClick;
     public TextMeshProUGUI afficheAutoClickFrequence;
     public int frequenceAutoClick = 5;
+    public int multiplicateurAutoclick = 1;       //multiplicateur qui s'incrémentera quand le joueur achetera un animal
+    private int multiplicateurAutoclickFinale;       //autoclick finale avec le multiplicateur calculé
 
+    public GameObject boutonTuto;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +35,7 @@ public class ClickerScript : MonoBehaviour
     void Update()
     {
         //score
-        score.text = "" + scoreCompteur;
+        score.text =scoreCompteur + " $";
     }
     
     public IEnumerator CoroutineTestotest()
@@ -40,7 +44,8 @@ public class ClickerScript : MonoBehaviour
         {
             if ( autoClickActiver == true)
             {
-                scoreCompteur += clickerValeur;
+                multiplicateurAutoclickFinale = (clickerValeur/2) * multiplicateurAutoclick;
+                scoreCompteur += multiplicateurAutoclickFinale;
             }
             yield return new WaitForSeconds(frequenceAutoClick);
         }
@@ -51,12 +56,6 @@ public class ClickerScript : MonoBehaviour
     {
         scoreCompteur= scoreCompteur + clickerValeur;
         
-    }
-
-    public void AugmenterClickerValeur()
-    {
-        clickerValeur = clickerValeur * 2;
-        afficheClickerValeur.text = clickerValeur + " ppp";
     }
 
     public void ActiverDescativerAutoClicker()
@@ -74,6 +73,12 @@ public class ClickerScript : MonoBehaviour
 
 
     }
+
+    public void FermerFenetreTuto()
+    {
+        Destroy(boutonTuto);
+    }
+
     public void AmeliorerFrequenceAutoClick()
     {
         if(frequenceAutoClick > 0)

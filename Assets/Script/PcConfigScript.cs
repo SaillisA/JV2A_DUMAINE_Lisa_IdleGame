@@ -48,16 +48,21 @@ public class PcConfigScript : MonoBehaviour
             if (niveauClavier == 4) { clicker.clickerValeur -= tableauAmeliorationClavier[2]; };
             if (niveauClavier == 5) { clicker.clickerValeur -= tableauAmeliorationClavier[3]; };
 
+
             clicker.afficheClickerValeur.text = +clicker.clickerValeur+ "";
             clicker.scoreCompteur -= tableauPrixClavier[niveauClavier - 1];
 
             niveauClavier++;
-            prixClavier.text = tableauPrixClavier[niveauClavier - 1] + "";
-            if (niveauClavier == 6 )                                                                    //si le joueur possede le clavier niveau 5, il ne peut plus l'ameliorer car celui est au niveau max
+            if (niveauClavier == 6)                                                                    //si le joueur possede le clavier niveau 5, il ne peut plus l'ameliorer car celui est au niveau max
             {
                 Debug.Log("On supprime le bouton pour acheter le clavier");
                 Destroy(boutonAchatClavier);
             }
+            else 
+            {
+                prixClavier.text = tableauPrixClavier[niveauClavier - 1] + ""; 
+            }
+           
         }
     }
     public void AmeliorationSouris()
@@ -76,11 +81,14 @@ public class PcConfigScript : MonoBehaviour
             clicker.scoreCompteur -= tableauPrixSouris[niveauSouris - 1];
 
             niveauSouris++;
-            prixSouris.text = tableauPrixSouris[niveauSouris - 1] + "";
             if (niveauSouris == 6)                                                                    //si le joueur possede la souris niveau 5, il ne peut plus l'ameliorer car celui est au niveau max
             {
                 Debug.Log("On supprime le bouton pour acheter la souris");
                 Destroy(boutonAchatSouris);
+            }
+            else
+            {
+                prixSouris.text = tableauPrixSouris[niveauSouris - 1] + "";
             }
         }
     }
@@ -100,11 +108,14 @@ public class PcConfigScript : MonoBehaviour
             clicker.scoreCompteur -= tableauPrixEcran[niveauEcran - 1];
 
             niveauEcran++;
-            prixEcran.text = tableauPrixEcran[niveauEcran - 1] + "";
             if (niveauEcran == 6)                                                                    //si le joueur possede l'ecran niveau 5, il ne peut plus l'ameliorer car celui est au niveau max
             {
                 Debug.Log("On supprime le bouton pour acheter lecran");
                 Destroy(boutonAchatEcran);
+            }
+            else
+            {
+                prixEcran.text = tableauPrixEcran[niveauEcran - 1] + "";
             }
         }
     }

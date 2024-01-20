@@ -6174,7 +6174,7 @@ MonoBehaviour:
   niveauSouris: 1
   niveauClavier: 1
   boutonAchatEcran: {fileID: 1726701945}
-  boutonAchatSouris: {fileID: 1276472558}
+  boutonAchatSouris: {fileID: 1671577827}
   boutonAchatClavier: {fileID: 572030660}
   emplacementEcran: {fileID: 602754546}
   emplacementSouris: {fileID: 1276472561}
@@ -7375,8 +7375,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 15.402}
-  m_SizeDelta: {x: 177.7668, y: 66.3747}
+  m_AnchoredPosition: {x: 3.0014, y: 15.402}
+  m_SizeDelta: {x: 222.7878, y: 66.3747}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105221472
 MonoBehaviour:
@@ -7428,9 +7428,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 6
+  m_fontSizeMax: 50
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
